@@ -1,7 +1,7 @@
 {
-  "name": "smoothSimple",
+  "name": "bernardbolter_2015",
   "version": "0.0.0",
-  "description": "Basic starter theme for Company Smoothism development",
+  "description": "Development files for www.bernardbolter.com in 2015",
   "main": "index.hmtl",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
