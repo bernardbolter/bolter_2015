@@ -1,0 +1,32 @@
+.portal
+	width: 96%;
+	height: auto;
+	background: #444
+	line-height: .8em
+	word-break: break-all
+	margin: 0 auto
+	padding: 2%
+	font:
+		size: 80px
+
+	&__lead
+		color: $lead-color
+		&--light
+			color: lighten($lead-color, 7%)
+		&--lighter
+			color: lighten($lead-color, 14%)
+	&__aka
+		color: $aka-color
+	&__name
+		color: $name-color
+		&--dark
+			color: darken($name-color, 10%)
+		&--darker
+			color: darken($name-color, 20%)
+		&--darkest
+			color: darken($name-color, 30%)
+	&__traveler a
+		text-decoration: none
+		color: $travel-color
+		&--darker
+			color: darken($travel-color, 7%)
