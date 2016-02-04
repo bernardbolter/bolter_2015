@@ -18,11 +18,11 @@ var gulp = require('gulp'),
 	livereload = require('gulp-livereload');
 
 var path = {
-	  JADE: './assets/templates/*.jade',
+	  JADE: '../assets/templates/*.jade',
 	  SASS: [
-		'./assets/sass/style.sass',
-		'./assets/sass/**/*.scss',
-		'./assets/sass/**/*.sass'
+		'../assets/sass/style.sass',
+		'../assets/sass/**/*.scss',
+		'../assets/sass/**/*.sass'
 			],
 	  JS: [
 	  	'./assets/js/vendor/*.js',
@@ -52,7 +52,7 @@ gulp.task('js-in', function() {
 });
 
 gulp.task('jade-in', function() {
-	gulp.src(path.JADE)
+	gulp.src('assets/templates/index.jade')
 		.pipe(jade({
 			pretty: true
 			}))
@@ -76,6 +76,11 @@ gulp.task('connect', function() {
     livereload: true,
     port: 8002
   });
+});
+
+gulp.task('clean-in', function() {
+	return gulp.src('../builds/inbound', {read: false})
+		.pipe(clean());
 });
 
 gulp.task('copyfonts', function() {
